@@ -1,0 +1,34 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Node Bot designed to monitor newly listed items on the Vinted platform, flagging those that are priced low.",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "exec": "npm start",
+    "ext": "ts",
+    "ingnore": [
+      "node_modules"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "morgan": "^1.10.0",
+    "reflect-metadata": "^0.2.2",
+    "vinted-api": "^2.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2"
+  }
+}
